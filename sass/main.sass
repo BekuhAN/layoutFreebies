@@ -4,6 +4,75 @@
 
 /*==========  user style  ==========*/
 
+body
+	font-family: Montserrat, sans-serif
+	color: #333
+	box-sizing: border-box
+
+header
+	border-bottom: 1px solid #eee
+
+.wrapper
+	width: 1720px
+	margin: 0 auto
+
+.header-info
+	display: flex
+	align-items: center
+	font-size: 14px
+	border-bottom: 1px solid #eee
+	.contact
+		margin-right: 10px
+	i
+		margin: 0 10px
+	.local
+		margin-left: auto
+		padding: 10px 0
+		.temperature
+			font-size: 18px
+		.language
+			text-transform: uppercase
+			border-left: 1px solid #eee
+			padding: 5px 15px
+			margin-left: 5px
+			i
+				margin: 0
+				font-size: 12px
+
+.menu
+	display: flex
+	align-items: center
+	// padding: 20px 0
+	text-transform: uppercase
+	font-weight: bold
+	.main-menu
+		margin-left: auto
+		ul
+			list-style: none
+			display: flex
+			align-items: center
+			margin: 0
+			li
+				a
+					text-decoration: none
+					color: #333
+					display: block
+					padding: 40px 25px
+					transition: .3s
+					&:hover
+						color: $main-color
+	.sign-up
+		margin-left: 20px
+		border: 2px solid #333;
+		padding: 10px 20px
+		font-size: 14px
+		border-radius: 3px
+		transition: .2s
+		&:hover
+			color: #fff
+			background: $main-color
+			border-color: $main-color
+			cursor: pointer
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
