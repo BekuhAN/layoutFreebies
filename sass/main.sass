@@ -73,6 +73,121 @@ header
 			background: $main-color
 			border-color: $main-color
 			cursor: pointer
+
+.slider
+	background: url('../img/slider-img-1.jpg') no-repeat center 30%
+	height: 720px
+	position: relative
+	color: #fff
+	text-align: center
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		height: 100%
+		width: 100%
+		top: 0
+		left: 0
+		background: rgba(#444,.2)
+	.container
+		height: 100%
+		.title
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			span
+				font-size: 50px
+			h1
+				font-size: 70px
+				text-transform: uppercase
+				letter-spacing: 2px
+				margin-bottom: 50px
+			.slider-btn
+				font-size: 14px
+				border: 2px solid #fff
+				border-radius: 5px
+				padding: 15px 25px
+				text-transform: uppercase
+				transition: .2s
+				&:hover
+					background: $main-color
+		.nav
+			font-size: 70px
+			&-next
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 0
+			&-prev
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: 0
+.tours
+	height: 120px
+
+.search-tour
+	width: 1170px
+	margin: 0 auto
+	background: #fff
+	box-shadow: 0 5px 5px 0 rgba(#000, .15)
+	padding: 20px
+	border-radius:  5px
+	display: flex
+	flex-wrap: wrap
+	transform: translateY(-50%)
+	.search-tour-item
+		margin-bottom: 15px
+		font-weight: 600
+		input, select
+			width: 100%
+			height: 50px
+			border: 2px solid #eee
+			border-radius: 3px
+			padding-left: 40px
+		input#city
+			background: url('../img/city.png') no-repeat
+			background-size: 30px
+			background-position: 5px
+		select#room
+			background: url('../img/door.png') no-repeat
+			background-size: 30px
+			background-position: 5px
+		input#check-in
+			background: url('../img/calendar.png') no-repeat
+			background-size: 30px
+			background-position: 5px
+		select#guest
+			background: url('../img/people.png') no-repeat
+			background-size: 30px
+			background-position: 5px
+		select#duration
+			background: url('../img/moon.png') no-repeat
+			background-size: 30px
+			background-position: 5px
+		.search-btn
+			text-align: center
+			text-transform: uppercase
+			color: #fff
+			background: $main-color
+			margin-top: 32px
+			padding: 12px
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 3px
+			border: 2px solid $main-color
+			transition: .2s
+			i
+				padding-right: 10px
+			&:hover
+				color: #333
+				background: #ffffff
+				border-color: #eee
+				cursor: pointer
+
+section
+	padding: 140px 0
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end

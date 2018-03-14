@@ -12,19 +12,20 @@
 
 <body>
 <header>
-	<div class="wrapper">
-		<div class="header-info">
-			<div class="contact"><i class="fa fa-phone"></i> +020 12345678</div>
-			<div class="contact"><i class="fa fa-envelope"></i> hello@homeeurope.com</div>
-			<div class="local">
-				<span class="city">London </span> 
-				<i class="fa fa-thermometer-full"></i> 
-				<span class="temperature"> 18&#176;</span>
-				<span class="language">en <i class="fa fa-chevron-down"></i></span>
+	<div class="container">
+		<div class="row">
+			<div class="header-info col">
+				<div class="contact"><i class="fa 	fa-phone"></i> +020 12345678</div>
+				<div class="contact"><i class="fa fa-envelope"></i> hello@homeeurope.com</div>
+				<div class="local">
+					<span class="city">London </span> 
+					<i class="fa fa-thermometer-full"></i> 
+					<span class="temperature"> 18&#176;</span>
+					<span class="language">en <i class="fa fa-chevron-down"></i></span>
+				</div>
 			</div>
-		</div>
-	
-		<div class="menu">
+		<div class="w-100"></div>
+		<div class="menu col">
 			<div class="logo"><img src="img/logo.png" alt=""></div>
 			<div class="main-menu">
 				<ul>
@@ -39,7 +40,103 @@
 			<div class="sign-up">sign up</div>
 		</div>
 	</div>
+	</div>
 </header>
+
+<div class="slider">
+	<div class="container">
+		<div class="title">
+			<span>Save 10% on</span>
+			<h1>Europe & Britan</h1>
+			<span class="slider-btn">learn more</span>
+		</div>
+		<div class="nav">
+			<div class="nav-next"><i class="fa fa-angle-right"></i></div>
+			<div class="nav-prev"><i class="fa fa-angle-left"></i></div>
+		</div>
+	</div>
+</div>
+
+<div class="container tours">
+		<div class="search-tour row">
+			<div class="search-tour-item col-6">
+				<label for="city">City, country, or apartoment</label><br>
+				<input name="city" placeholder="City" id="city" type="text">	
+			</div>
+
+			<div class="search-tour-item col-3">
+				<label for="guest">Guset</label><br>
+				<select name="guest" id="guest">
+					<option value="1">1 people</option>
+					<option value="2">2 people</option>
+					<option value="3">3 people</option>
+				</select>
+			</div>
+
+			<div class="search-tour-item col-3">
+				<label for="room">Room</label><br>
+				<select name="room" id="room">
+					<option value="1">1 room</option>
+					<option value="2">2 rooms</option>
+					<option value="3">3 rooms</option>
+				</select>
+			</div>
+			
+			<div class="search-tour-item col-3">
+				<label for="check-in">Check-in</label><br>
+				<input name="check-in" id="check-in" type="date" >
+			</div>
+
+			<div class="search-tour-item col-3">
+				<label for="duration">Duration</label><br>
+				<select name="duration" id="duration">
+					<option value="1">1 night</option>
+					<option value="2">2 nights</option>
+					<option value="3">3 nights</option>
+				</select>
+			</div>
+			
+			<div class="search-tour-item col-3">
+				<label for="check-out">Check-out</label><br>
+				<label id="check-out" for="out-date">Out-date</label>
+			</div>
+			
+			<div class="search-tour-item col-3">
+				<div class="search-btn"><i class="fa fa-search"></i> Search</div>
+			</div>
+
+			
+
+		</div>
+</div>
+
+<section>
+	<div class="container">
+		
+	</div>
+</section>
+<section>
+	<div class="container">
+		
+	</div>
+</section>
+<section>
+	<div class="container">
+		
+	</div>
+</section>
+<section>
+	<div class="container">
+		
+	</div>
+</section>
+<section>
+	<div class="container">
+		
+	</div>
+</section>
+	
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
