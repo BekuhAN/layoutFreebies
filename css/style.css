@@ -2293,6 +2293,18 @@ header {
   padding-left: 40px;
 }
 
+.search-tour .search-tour-item input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.search-tour .search-tour-item input[type=date]::-webkit-clear-button {
+  display: none;
+}
+
+.search-tour .search-tour-item input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+}
+
 .search-tour .search-tour-item input#city {
   background: url("../img/city.png") no-repeat;
   background-size: 30px;
@@ -2351,6 +2363,105 @@ header {
 
 section {
   padding: 140px 0;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-title .main-title {
+  font-size: 60px;
+  color: #ddd;
+  letter-spacing: 1px;
+}
+
+.section-title .sub-title {
+  font-size: 32px;
+  font-weight: 600;
+  transform: translateY(-115%);
+}
+
+.tour-item {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 420px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.tour-item .media {
+  height: 100%;
+}
+
+.tour-item .media img {
+  height: 100%;
+  width: initial;
+}
+
+.tour-item .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to bottom, rgba(197, 227, 239, 0) 0%, black 100%);
+}
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #333;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.owl-nav .owl-prev,
+  .owl-nav .owl-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff !important;
+  border-radius: 50% !important;
+  top: -30px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: .2s;
+}
+
+.owl-nav .owl-prev:hover,
+    .owl-nav .owl-next:hover {
+  background: #4588f2 !important;
+}
+
+.owl-nav .owl-prev:focus,
+    .owl-nav .owl-next:focus {
+  outline: none;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -20px;
+}
+
+.owl-dots {
+  display: none;
 }
 
 /*==========  user style  ==========*/
