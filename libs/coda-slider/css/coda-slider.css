@@ -1,0 +1,49 @@
+/* #slider {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scroll {
+    width: 1170px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;
+}
+
+.scrollContainer div.panel {
+    padding: 20px;
+    height: 100%;
+    width: 1170px;
+}
+
+ul.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 9px;
+}
+
+ul.navigation li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul.navigation a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.navigation a:hover {
+    background-color: #f6f6f6;
+}
+
+ul.navigation a.selected {
+    background-color: #fff;
+}
+
+ul.navigation a:focus {
+    outline: none;
+} */

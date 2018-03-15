@@ -15,22 +15,32 @@ $(document).ready(function() {
 
 
 //*  owl courusel  *//
+
+    $('.custom1').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+    responsive:{
+        1000:{
+            items:3
+        },
+        1900:{
+            items:4
+        }
+    }
+    })
+
 	$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
     responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
         1000:{
             items:5
         }
     }
 	})
+
 //*  owl courusel  *//
 
 });
