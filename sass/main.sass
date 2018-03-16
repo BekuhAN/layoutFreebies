@@ -476,6 +476,8 @@ section
 	margin-right: 30px
 	width: 320px
 	font-weight: 600
+	+media-breakpoint-down(xl)
+		width: 210px
 	&:last-child
 		margin-right: 0
 	.media
@@ -486,6 +488,8 @@ section
 		display: flex
 		justify-content: center
 		align-items: center
+		+media-breakpoint-down(xl)
+			height: 160px
 		img
 			height: 100%
 		&::after
@@ -568,6 +572,7 @@ footer
 			bottom: -15px
 			left: 0
 	.contact
+		padding-right: 100px
 		.email, .phone, .local
 			margin-top: 30px
 		span
@@ -577,7 +582,50 @@ footer
 			position: absolute
 			color: $main-color
 	.footer-nav
-		// padding-left: 100px
+		.nav-item
+			display: block
+			margin-top: 20px
+			color: #fff
+			text-decoration: none
+			transition: .2s
+			&:hover
+				color: $main-color
+	.join-form
+		input
+			height: 50px
+			font-family: Montserrat
+			font-weight: 600
+			margin: 15px 0
+		input[type="text"]
+			width: 75%
+			padding-left: 10px
+			padding-top: 0
+			border-radius: 3px 0 0 3px
+			border: none
+			box-shadow: none
+			&::placeholder
+				color: #aaa
+		input[type="submit"]
+			width: 25%
+			border-radius: 0 3px 3px 0
+			border: none
+			box-shadow: none
+			background: $main-color
+			color: #fff
+			text-transform: uppercase
+			transition: .2s
+			&:hover
+				background: lighten($main-color, 5%)
+				cursor: pointer
+		.social
+			font-size: 20px
+			margin-top: 20px
+			a
+				margin-right: 20px
+				color: #fff
+				transition: .2s
+				&:hover
+					color: $main-color
 
 .copyright
 	text-align: center

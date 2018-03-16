@@ -2759,6 +2759,12 @@ section {
   font-weight: 600;
 }
 
+@media (max-width: 1799px) {
+  .blog-item {
+    width: 210px;
+  }
+}
+
 .blog-item:last-child {
   margin-right: 0;
 }
@@ -2771,6 +2777,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1799px) {
+  .blog-item .media {
+    height: 160px;
+  }
 }
 
 .blog-item .media img {
@@ -2883,6 +2895,10 @@ footer .footer-title::after {
   left: 0;
 }
 
+footer .contact {
+  padding-right: 100px;
+}
+
 footer .contact .email, footer .contact .phone, footer .contact .local {
   margin-top: 30px;
 }
@@ -2894,6 +2910,69 @@ footer .contact span {
 
 footer .contact i {
   position: absolute;
+  color: #4588f2;
+}
+
+footer .footer-nav .nav-item {
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: .2s;
+}
+
+footer .footer-nav .nav-item:hover {
+  color: #4588f2;
+}
+
+footer .join-form input {
+  height: 50px;
+  font-family: Montserrat;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+footer .join-form input[type="text"] {
+  width: 75%;
+  padding-left: 10px;
+  padding-top: 0;
+  border-radius: 3px 0 0 3px;
+  border: none;
+  box-shadow: none;
+}
+
+footer .join-form input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+footer .join-form input[type="submit"] {
+  width: 25%;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  box-shadow: none;
+  background: #4588f2;
+  color: #fff;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+footer .join-form input[type="submit"]:hover {
+  background: #5d97f4;
+  cursor: pointer;
+}
+
+footer .join-form .social {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+footer .join-form .social a {
+  margin-right: 20px;
+  color: #fff;
+  transition: .2s;
+}
+
+footer .join-form .social a:hover {
   color: #4588f2;
 }
 
