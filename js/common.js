@@ -21,6 +21,12 @@ $(document).ready(function() {
     margin:30,
     nav:true,
     responsive:{
+        300:{
+            items:1
+        },
+        600:{
+            items:2
+        },
         1000:{
             items:3
         },
@@ -35,6 +41,12 @@ $(document).ready(function() {
     margin:10,
     nav:true,
     responsive:{
+        300:{
+            items:1
+        },
+        600:{
+            items:2
+        },
         1000:{
             items:5
         }
